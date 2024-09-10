@@ -21,8 +21,8 @@ This Python script provides several functionalities for processing Excel files. 
 
 ## Installation
 
-1. **Clone the Repository**
-
    ```sh
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone git@github.com:felix-arvidsson/brrrDataProcessor.git
+   cd ./brrrDataProcessor
+   python -m venv venv && source ./venv/bin/activate
+   pip install -r requirements.txt
