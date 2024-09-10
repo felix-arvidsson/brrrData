@@ -1,8 +1,8 @@
 ![data processor go brrr](brrr.png)
-# Data Processing Script
+# excel data processing script
 
-python script I use for work to process data from excel files.
-I will add more features in the future as I need them
+python script I use for work to process data in excel files.
+I plan to add more features in the future
  
 
 ## Features
