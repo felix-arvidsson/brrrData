@@ -5,7 +5,7 @@ from data_processing.sorting import sort_excel_rows
 from data_processing.modification import modify_column_in_excel
 import inquirer
 
-def select_menu():
+def main():
     choices = [
         'Ta bort dubblett-rader', 
         'Behåll endast dubletter', 
@@ -36,4 +36,4 @@ def select_menu():
         print("Ingen operation vald.")
 
 if __name__ == "__main__":
-    select_menu()
+    main()

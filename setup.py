@@ -17,7 +17,7 @@ setup(
     install_requires=read_requirements('requirements.txt'),
     entry_points={
         'console_scripts': [
-            'brrrdata=brrrDataProcessor.main:main',  # Adjust to the script with the main function
+            'brrrdata=brrrDataProcessor.main:main',
         ],
     },
     classifiers=[
