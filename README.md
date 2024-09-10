@@ -1,14 +1,9 @@
 ![data processor go brrr](brrr.png)
 # Data Processing Script
 
-This Python script provides several functionalities for processing Excel files. It includes features for:
-
-- Removing duplicate rows from an Excel file.
-- Saving only duplicate rows to a new file.
-- Comparing columns between two Excel files and saving common values.
-- Listing duplicate rows in an Excel file and saving them to a new file if desired.
-- Sorting rows in an Excel file based on a selected column.
-- Modifying column values in an Excel file with various options.
+python script I use for work to process data from excel files.
+I will add more features in the future as I need them
+ 
 
 ## Features
 
