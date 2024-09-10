@@ -17,7 +17,7 @@ I plan to add more features in the future
 ## Installation
 
    ```sh
-   git clone git@github.com:felix-arvidsson/brrrDataProcessor.git
-   cd ./brrrDataProcessor
-   python -m venv venv && source ./venv/bin/activate
-   pip install -r requirements.txt
+   pip install brrrDataProcessor
+   #usage
+   brrrdata
+   
