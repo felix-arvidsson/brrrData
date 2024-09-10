@@ -20,19 +20,17 @@ def modify_column_in_excel():
         
         # Fråga användaren hur de vill ändra kolumnen
         modification_type = inquirer.list_input("Hur vill du ändra kolumnen?", 
-                                                choices=["Lägg till ett komma i slutet av varje värde", 
-                                                         "Lägg till ett komma i början av varje värde", 
-                                                         "Ta bort alla komman i värdena",
+                                                choices=["Lägg till text i slutet av varje värde", 
+                                                         "Lägg till text i början av varje värde", 
                                                          "Ändra text (ange text att ersätta)"])
 
-        if modification_type == "Lägg till ett komma i slutet av varje värde":
-            df[column_to_modify] = df[column_to_modify].astype(str) + ','
+        if modification_type == "Lägg till text i slutet av varje värde":
+            new_text = input("Skriv in den nya texten: ")
+            df[column_to_modify] = df[column_to_modify].astype(str) + new_text
 
-        elif modification_type == "Lägg till ett komma i början av varje värde":
-            df[column_to_modify] = ',' + df[column_to_modify].astype(str)
-
-        elif modification_type == "Ta bort alla komman i värdena":
-            df[column_to_modify] = df[column_to_modify].astype(str).str.replace(',', '')
+        elif modification_type == "Lägg till text i början av varje värde":
+            new_text = input("Skriv in den nya texten: ")
+            df[column_to_modify] = new_text + df[column_to_modify].astype(str)
 
         elif modification_type == "Ändra text (ange text att ersätta)":
             old_text = input("Skriv in texten som ska ersättas: ")
