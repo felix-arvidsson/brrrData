@@ -1,6 +1,6 @@
 import pandas as pd
-from file_selection import single_file_selector
-from utils.prompt_utils import select_columns_to_ignore
+from brrrData.file_selection import single_file_selector
+from brrrData.utils.prompt_utils import select_columns_to_ignore
 import inquirer
 
 def compare_columns_in_files_and_save():

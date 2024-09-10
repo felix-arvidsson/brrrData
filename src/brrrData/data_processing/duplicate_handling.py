@@ -1,7 +1,7 @@
 import pandas as pd
 import inquirer
-from file_selection import single_file_selector
-from utils.prompt_utils import select_columns_to_ignore
+from brrrData.file_selection import single_file_selector
+from brrrData.utils.prompt_utils import select_columns_to_ignore
 
 from prompt_toolkit import Application
 from prompt_toolkit.layout.containers import HSplit, Window

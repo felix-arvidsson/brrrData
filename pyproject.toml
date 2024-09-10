@@ -3,8 +3,8 @@ requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "brrrData"
-version = "0.2.0" # Replace with your actual version number
+name = "brrrdata"
+version = "0.2.0"
 description = "A tool for handling Excel files and data processing."
 authors = [{ name = "felix arvidsson", email = "felix.arvidsson@gmail.com" }]
 license = { file = "LICENSE" }
@@ -27,3 +27,12 @@ dependencies = [
   "wcwidth ==0.2.13",
   "xmod ==1.8.1",
 ]
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.scripts]
+brrrdata = "brrrData.__main__:main"
+
+[project.urls]
+"Homepage" = "https://github.com/felix-arvidsson/brrrData"
