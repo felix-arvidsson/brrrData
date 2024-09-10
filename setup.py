@@ -5,7 +5,7 @@ def read_requirements(filename):
         return [line.strip() for line in f if line.strip() and not line.startswith('#')]
 
 setup(
-    name='brrrDataProcessor',
+    name='brrrData',
     version='0.1.0',
     description='A data processing tool for Excel files',
     long_description=open('README.md').read(),
@@ -17,7 +17,7 @@ setup(
     install_requires=read_requirements('requirements.txt'),
     entry_points={
         'console_scripts': [
-            'brrrdata=brrrDataProcessor.main:main',
+            'brrrdata=brrrData.main:main',
         ],
     },
     classifiers=[

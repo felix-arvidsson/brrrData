@@ -17,7 +17,7 @@ I plan to add more features in the future
 ## Installation
 
    ```sh
-   pip install brrrDataProcessor
+   pip install brrrData
    #usage
    brrrdata
    
