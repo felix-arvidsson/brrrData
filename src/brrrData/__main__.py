@@ -1,8 +1,8 @@
-from brrrData.file_selection import single_file_selector, multi_file_selector
-from brrrData.data_processing.duplicate_handling import remove_duplicate_rows_in_excel, save_duplicate_rows_only, list_duplicates_in_excel
-from brrrData.data_processing.comparison import compare_columns_in_files_and_save
-from brrrData.data_processing.sorting import sort_excel_rows
-from brrrData.data_processing.modification import modify_column_in_excel
+from file_selection import single_file_selector, multi_file_selector
+from data_processing.duplicate_handling import remove_duplicate_rows_in_excel, save_duplicate_rows_only, list_duplicates_in_excel
+from data_processing.comparison import compare_columns_in_files_and_save
+from data_processing.sorting import sort_excel_rows
+from data_processing.modification import modify_column_in_excel
 import inquirer
 
 def main():
